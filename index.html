@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Alex's Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <!-- The main parent container -->
+    <div id="app">
+
+        <div id="title">
+            <h1>Placeholder title</h1>
+        </div>
+
+        <!-- Header parent-child -->
+        <div id="header">
+            <a target="_blank" href=""><button class="headlink">Home</button></a>
+            <a target="_blank" href=""><button class="headlink followcell">Resume</button></a>
+            <a target="_blank" href="https://github.com/piercecollazo"><button class="headlink followcell">Git</button></a>
+            <a target="_blank" href=""><button class="headlink followcell">Contact</button></a>
+        </div>
+
+        <!-- Content holder for image slideshow and summary text -->
+        <div id="content">
+
+            <!-- image slideshow -->
+            <div id="slideshow">
+
+                
+                <div class="slide fade">
+                    <img class="image" id="img1" src="./assets/images/howi1.jpg">
+                    <h1 class="imageTitle">Hypothetical Project</h1>
+                    <p class="summary">This is really just a filler summary for a hypothetical project to layer over an image.</p>
+                </div>
+
+                <div class="slide fade">
+                    <img class="image" id="img2" src="./assets/images/howi2.jpg">
+                    <h1 class="imageTitle">Theoretical Project</h1>
+                    <p class="summary">This is really just a filler summary for a theoretical project to layer over an image.</p>
+                </div>
+
+                <div class="slide fade">
+                    <img class="image" id="img3" src="./assets/images/howi3.jpg">
+                    <h1 class="imageTitle">Ruminated Project</h1>
+                    <p class="summary">This is really just a filler summary for a ruminated project to layer over an image.</p>
+                </div>
+                <!-- Next and previous buttons for image selection -->
+                <a id="prev" onclick="plusSlide(-1)">&#10094</a>
+                <a id="next" onclick="plusSlide(1)">&#10095</a>
+
+                <div id="homeText">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec leo mi, ornare nec dui nec, aliquam posuere nisi. Nam non euismod nibh. Nam maximus elit in mi accumsan, nec lobortis felis maximus. Pellentesque vestibulum sit amet lacus tristique hendrerit. Vivamus quis iaculis nisl, quis porttitor nibh. Aliquam vitae aliquet mauris. Praesent tincidunt rhoncus lacus.</p>
+                </div>
+
+                <!-- dots beneath slideshow to denote image selected -->
+                <div class="navdots">
+                    <button class="dot" onclick="currentSlide(0)"></button>
+                    <button class="dot" onclick="currentSlide(1)"></button>
+                    <button class="dot" onclick="currentSlide(2)"></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer area(extrenuous links, trademark, etc. to avoid empty space) -->
+        <div id="footer">
+            <p>Alex Collazo 2019</p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    
+</body>
+</html>
