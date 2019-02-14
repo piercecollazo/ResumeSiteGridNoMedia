@@ -28,6 +28,12 @@ body{
     width:100vw;
     height:5vh;
 }
+
+.material-icons{
+    position: relative;
+    top:.7vh;
+}
+
 button{
     grid-area:2/1/2/1;
     background-color: rgb(2, 80, 126);
